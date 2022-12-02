@@ -17,7 +17,6 @@ data "aws_ami" "latest_ubuntu" {
   }
 }
 
-
 //Creating Public EC2 Instance
 resource "aws_instance" "Public_EC2" {
   ami                         = data.aws_ami.latest_ubuntu.id
