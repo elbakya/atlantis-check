@@ -15,3 +15,4 @@ unzip ngrok-stable-darwin-amd64.zip
 
 echo "Generate random secret string"
 echo $RANDOM | md5sum | head -c 20; echo;
+
