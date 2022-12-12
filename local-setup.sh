@@ -7,7 +7,7 @@ ATLANTIS_VERSION=v0.21.0
 ATLANTIS_PACKAGE=atlantis_darwin_amd64.zip
 
 echo "Downloading atlantis lib"
-curl -O https://github.com/runatlantis/atlantis/releases/download/v0.21.0/atlantis_darwin_amd64.zip
+curl -O https://github.com/runatlantis/atlantis/releases/download/v0.21.0/atlantis_linux_386.zip 
 unzip ${ATLANTIS_PACKAGE}
 
 echo "Downloading ngrok: To have access to the internet"
