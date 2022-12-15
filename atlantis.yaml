@@ -2,7 +2,7 @@ version: 3
 projects:
   - name: poc
     dir: .
-    workspce: poc
+    workspace: poc
     workflow: poc
     autplan:
       enabled: true
