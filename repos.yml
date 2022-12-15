@@ -2,7 +2,7 @@ repos:
   - id: /* ./
   allows_overrides: ["workflow"]
   pre_workflow_hooks:
-    run: "cat ~/workspace/git/gitops-with-atlantis/atlantis.yaml > atlantis.yaml"
+    - run: "cat ~/workspace/git/gitops-with-atlantis/atlantis.yaml > atlantis.yaml"
 workflow:
   poc:
     plan:
