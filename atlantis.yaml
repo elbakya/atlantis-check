@@ -4,5 +4,5 @@ projects:
     dir: .
     workspace: poc
     workflow: poc
-    autplan:
+    autoplan:
       enabled: true
