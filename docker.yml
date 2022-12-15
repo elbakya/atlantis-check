@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  ngrok:
+    image: ngrok/ngrok
+    environment:
+    - NGROK_AUTHTOKEN
+  atlantis:
+    image: ghcr.io/runatlantis/atlantis:v0.19.6
+    environment:
+      - ATLANTIS_ATLANTIS_URL
+      - ATLANTIS_GH_USER
+      - ATLANTIS_GH_TOKEN
+      - ATLANTIS_GH_WEBHOOK-SECRET
+      - ATLANTIS_REPO_ALLOWLIST
