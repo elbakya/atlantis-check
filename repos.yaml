@@ -9,11 +9,8 @@ workflows:
     plan:
       steps:
       - env:
-            name: AWS_SECRET_KEY_ID
-            command: echo "${COMMENT_ARGS%%,*}"
-        - env:
-            name: AWS_SECRET_ACCESS_KEY
-            command: echo "${COMMENT_ARGS##*,}"
+          name: TF_WORKSPACE
+          command: echo $WORKSPACE
       - init
       - plan:
           extra_args: ["-var-file=tfvars/$WORKSPACE.tfvars"]
@@ -39,4 +36,3 @@ workflows:
           name: TF_WORKSPACE
           command: echo $WORKSPACE
       - run: terragrunt apply -input=false -no-color
-
