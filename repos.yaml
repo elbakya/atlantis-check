@@ -7,7 +7,7 @@ repos:
 workflows:
   terraform:
     plan:
-      steps:
+      steps: 
       - env:
           name: TF_WORKSPACE
           command: echo $WORKSPACE
@@ -36,3 +36,4 @@ workflows:
           name: TF_WORKSPACE
           command: echo $WORKSPACE
       - run: terragrunt apply -input=false -no-color
+
