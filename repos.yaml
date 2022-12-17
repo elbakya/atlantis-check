@@ -36,4 +36,3 @@ workflows:
           name: TF_WORKSPACE
           command: echo $WORKSPACE
       - run: terragrunt apply -input=false -no-color
-
